@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Link } from '@reach/router';
-import SearchParams from './SearchParams.js';
-import Details from './Details.js';
+import SearchParams from './SearchParams';
+import Details from './Details';
 import ThemeContext from './ThemeContext';
 
 const App = () => {

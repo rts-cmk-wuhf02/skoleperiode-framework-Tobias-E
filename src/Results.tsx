@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import { Animal } from '@frontendmasters/pet';
 import Pet from './Pet';
 
-const Results = ({ pets }) => {
+interface IProbs {
+	pets: Animal[];
+}
+
+const Results: FunctionComponent<IProbs> = ({ pets }) => {
 	return (
 		<div className='search'>
-			{pets.lenght === 0 ? (
+			{pets.length === 0 ? (
 				<h1>No Pets Found!</h1>
 			) : (
 				pets.map((pet) => (
