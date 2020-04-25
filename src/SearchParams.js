@@ -12,14 +12,14 @@ const SearchParams = () => {
 	const [breed, BreedDropdown, setBreed] = useDropdown('Breed', '', breeds);
 	const [theme, setTheme] = useContext(ThemeContext);
 
-	async function requestPets() {
-		const { animals } = await pet.animals({
+	function requestPets() {
+		pet.animals({
 			location,
 			breed,
 			type: animal,
+		}).then(({ animals }) => {
+			setPets(animals || []);
 		});
-
-		setPets(animals || []);
 	}
 
 	useEffect(() => {
