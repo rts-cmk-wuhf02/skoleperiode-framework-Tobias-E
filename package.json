@@ -1,41 +1,35 @@
 {
-	"name": "frontend-masters",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"clear-build-cache": "rm -rf .cache/ dist/",
-		"dev": "parcel src/index.html",
-		"dev:mock": "cross-env PET_MOCK=mock npm run dev",
-		"format": "prettier \"src/**/*.{js, html}\" --write",
-		"lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@babel/core": "^7.9.0",
-		"@babel/plugin-proposal-class-properties": "^7.8.3",
-		"@babel/preset-env": "^7.9.5",
-		"@babel/preset-react": "^7.9.4",
-		"babel-eslint": "^10.1.0",
-		"cross-env": "^7.0.2",
-		"eslint": "^6.8.0",
-		"eslint-config-prettier": "^6.10.1",
-		"eslint-plugin-import": "^2.20.2",
-		"eslint-plugin-jsx-a11y": "^6.2.3",
-		"eslint-plugin-react": "^7.19.0",
-		"eslint-plugin-react-hooks": "^3.0.0",
-		"parcel-bundler": "^1.12.4"
-	},
-	"dependencies": {
-		"@frontendmasters/pet": "^1.0.3",
-		"@reach/router": "^1.3.3",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1"
-	},
-	"browserslist": [
-		"last 2 Chrome versions"
-	]
+  "name": "simple-counter",
+  "version": "1.0.0",
+  "description": "A simple counter application for demonstrating state management",
+  "keywords": [],
+  "main": "src/index.js",
+  "repository": {
+    "url": "https://github.com/stevekinney/simple-counter-react-state"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "7.7.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.14.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-scripts": "^3.4.1",
+    "use-query-params": "^0.4.5"
+  },
+  "devDependencies": {
+    "typescript": "3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
